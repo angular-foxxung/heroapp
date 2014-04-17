@@ -1,0 +1,21 @@
+{
+    "name": "heroapp",
+    "version": "0.0.1",
+    "author": "Michael Hackstein, Julian Steiner, Andreas Streichardt",
+    "description": "heroapp",
+    "assets": {
+        "index.html": {
+            "files": [
+                "assets/index.html"
+            ]
+        },
+        "application.js": {
+            "files": [
+                "assets/js/**"
+            ]
+        }
+    },
+    "controllers": {
+        "/": "heroapp.js"
+    }
+}
