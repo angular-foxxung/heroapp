@@ -14,9 +14,4 @@
   controller.get('/hero/:id', function (req, res) {
     res.json(heroes.byId(req.params("id")).forClient());
   });
-  controller.put('/hero/:id', function (req, res) {
-      var hero = req.params('hero');
-      heroes.replace(hero);
-      res.json(hero.forClient());
-  }).bodyParam('hero', 'Hero', HeroModel);
 }());
