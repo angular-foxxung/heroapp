@@ -14,9 +14,6 @@
   controller.get('/hero/:id', function (req, res) {
     res.json(heroes.byId(req.params("id")).forClient());
   });
-  controller.get('/random', function (req, res) {
-    res.json(heroes.any());
-  });
   controller.put('/hero/:id', function (req, res) {
       var hero = req.params('hero');
       if (!hero.get("comment")) {

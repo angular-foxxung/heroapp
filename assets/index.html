@@ -4,20 +4,14 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.min.js"></script>
 <script type="text/javascript" src="application.js"></script>
-<script type="text/ng-template" id="partials/hero.html">
-        <ng-form name="Hero">
-            <div>Name: <input type="text" ng-model="hero.name"></div>
-            <div>Comment: <textarea ng-model="hero.comment" ng-required="true">{{ hero.comment }}</textarea></div>
-            <button ng-click="hero.$update()" ng-disabled="Hero.$invalid">Save</button>
-        </ng-form>
-</script>
 </head>
 <body ng-controller="HeroAppController">
 <div>
     <div>
-            <button ng-click="summon()">Summon Hero</button>
-            <hero ng-repeat="heroId in heroIds" id="{{ heroId }}"></hero>
-            <hero id="ironmantonystark"></hero>
+        <form name="Hero">
+            <div>Name: <input type="text" ng-model="hero.name" ng-required="true"></div>
+            <div>Comment: <textarea ng-model="hero.comment" ng-required="true">{{ hero.comment }}</textarea></div>
+            <button ng-click="hero.$update()" ng-disabled="Hero.$invalid">Save</button>
         </form>
     </div>
 </div>
