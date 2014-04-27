@@ -9,9 +9,9 @@
 <div>
     <div>
         <form name="Hero">
-            <div>Name: <input type="text" ng-model="hero.name" ng-required="true"></div>
-            <div>Comment: <textarea ng-model="hero.comment" ng-required="true">{{ hero.comment }}</textarea></div>
-            <button ng-click="hero.$update()" ng-disabled="Hero.$invalid">Save</button>
+            <div>Name: <input type="text" ng-model="hero.name"></div>
+            <div>Comment: <textarea ng-model="hero.comment">{{ hero.comment }}</textarea></div>
+            <button ng-click="hero.$update()">Save</button>
         </form>
     </div>
 </div>

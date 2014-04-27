@@ -16,12 +16,7 @@
   });
   controller.put('/hero/:id', function (req, res) {
       var hero = req.params('hero');
-      if (!hero.get("comment")) {
-        throw new Error("Comment missing");
-      }
-
       heroes.replace(hero);
       res.json(hero.forClient());
-  }).bodyParam('hero', 'Hero', HeroModel)
-  .errorResponse(Error, 400, "Bad Request");
+  }).bodyParam('hero', 'Hero', HeroModel);
 }());
