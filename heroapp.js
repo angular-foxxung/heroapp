@@ -8,7 +8,7 @@
 
   var DB = require("internal").db;
   var Heroes = require("repositories/heroes").Repository;
-  var heroes = new Heroes(DB._collection("marvel_vertices"));
+  var heroes = new Heroes(DB._collection("heroes"));
 
   // install route
   controller.get('/hero/:id', function (req, res) {
