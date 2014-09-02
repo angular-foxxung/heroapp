@@ -11,6 +11,8 @@
         },
         "application.js": {
             "files": [
+                "assets/lib/angular.min.js",
+                "assets/lib/angular-resource.min.js",
                 "assets/js/**"
             ]
         }
